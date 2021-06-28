@@ -1,0 +1,982 @@
+.header{
+    background-color: #f53d2d;
+    margin: -8px -8px 0px -8px;
+} 
+
+#main_of_main{
+    background-color: #eee;
+    margin: -8px;
+    padding: 8px;
+    padding-bottom: 80px;
+    margin-bottom: 4px;
+}
+
+.contact-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-left, .contact-right{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-contact-left, .btn-contact-right{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+.btn-contact-left:hover{
+    color: #ffd3d1;
+}
+
+.btn-contact-right:hover{
+    color: #ffd3d1;
+}
+
+.btn-contact-right a:hover{
+    color: #ffd3d1;
+}
+
+.annoucement-title-contact__right{
+    padding: 0px 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.annoucement-title-contact__right::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+}
+
+.annoucement-title-contact__right:hover .annoucement-hidden-contact{
+    display: block;
+}
+.annoucement-hidden-contact{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;;
+    top: 85%;
+    right: -50%;
+    position: absolute;
+    box-shadow: 0px 3px 3px 0px #777;
+    width: 400px;
+    background-color: white;
+    display: none;
+    transform-origin: 70% top;
+    animation: hienratutu ease-in 0.3s; 
+}
+.annoucement-hidden-contact::before{
+    content: "";
+    position: absolute;
+    border: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -32px;
+    left: 260px;
+}
+
+
+.annoucement-title-hidden{
+    margin-left: 20px;
+    opacity: 0.6;
+    color: #333;
+}
+
+.annoucement-contact-element{
+    border-top: 0.6px solid #999;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    color: #888 !important;
+    display: flex;
+    text-decoration: none;
+}
+
+.annoucement-contact-element:hover{
+    background-color: #fff;
+}
+
+.annoucement-element-image{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.annoucement-element-info h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px 0px 0px 5px;
+}
+
+.annoucement-element-info p{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin: 8px;
+}
+
+.btn-contact-left::after{   
+    content: "    |";
+    padding-right: 1px ;
+    font-weight: 800;
+}
+
+.clicktodisplayqrcode::after{
+    content: "";
+    width: 100%;
+    height: 20px;
+}
+
+.qrcode{    
+    border: 1px solid black;
+    box-shadow: 0px 5px 5px 0px #333;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    display: none;
+}
+
+.clicktodisplayqrcode:hover ~.qrcode{
+    display: block;
+}
+
+.qrcode{
+    transform-origin: 50% top;
+    animation: hienratutu ease-in 0.6s;
+}
+
+@keyframes hienratutu{
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.qrcode img{
+    width: 200px;
+}
+
+.btn-contact-right::after{
+    content: "    |";
+    padding-right: 1px ;
+    font-weight: 800;
+}
+
+.btn-contact-right a{
+    color:white;
+    text-decoration: none;
+}
+
+.btn-contact-right-thep{
+    margin: 0px;
+}
+
+.btn-contact-nonegach::after{
+    content: "";
+}
+
+
+.icon-contact-left{
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+}
+
+.icon-contact-left img{
+    width: 100%;
+}
+.bell-icon{
+    color: white;
+    height: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.bell-icon img{
+    width: 20px;
+    color: white;
+}
+
+/* content-header */
+.content-header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-header-left{
+    width: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.nameshop-header{
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-header-img{
+    border: 1px solid #000;
+    line-height: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.search-headear{
+    border-radius: 5px;
+    width: 50%;
+}
+
+.form-for-search{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-button{
+    background-color: white;
+    border-radius: 6px;
+}
+
+.find-button-shoppe{
+    padding-left: 20px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+}
+
+.search-header-danhmucsanpham{
+    width: 110%;
+    overflow: hidden;
+}
+
+.search-header-element{
+    font-size: 10px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px 15px 0px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-header-element:hover{
+    color: #ffd3d1;
+}
+
+.find-button-shoppe:focus-visible{
+    outline:none;
+}
+
+.find-button-submit{
+    margin-left: 40px;
+    cursor: pointer;
+    height: 35px;
+    width: 10%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.find-icon-header{
+    z-index: 1;
+}
+
+
+.cart-header-right{
+    position: relative;
+    width: 8%;
+    cursor: pointer;
+}
+
+
+.cart-link-header{
+    position: relative;
+    display: block;
+}
+
+.cart-link-header img{
+    width: 50px
+}
+
+.cart-header-right:hover .cart-items-header{
+    display: block;
+}
+
+.cart-header-right{
+    cursor: pointer;
+}
+
+.cart-items-header{    
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 60px;
+    right: 40%;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px #555;
+    display: none;
+    transform-origin: 80% top;
+    animation: hienratutu ease-in 0.3s;
+    z-index: 1;
+}
+
+.cart-items-header::after{
+    content: "";
+    position: absolute;
+    top: -34px;
+    right: 7%;
+    /* background-color: black; */
+    border-color: transparent transparent white transparent;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.wrapper-cart{
+    padding: 0px;
+    /* margin: 12px; */
+}
+
+.wrapper-cart-title{
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+
+.cart-element{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    margin: 0px 0px;
+}
+
+.cart-element:hover{
+    background-color: #ddd;
+}
+
+.cart-element p{
+    margin: 0px;
+}
+
+.cart-element-title{
+    font-size: 14px;
+    font-weight: 100;
+    width: 60%;
+    color: #8a8a10;
+}
+
+.wrapper_cart_price_inthecart{
+    margin-left: 16px;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.cart-element-image{
+    width: 15%;
+    /* height: 30px; */
+    margin-right: 14px;
+}
+
+.cart-element-price{
+    text-align: end;
+    justify-self: flex-end;
+    width: 25%;
+}
+
+.number_order{
+    color: #444;
+}
+
+.cart_link_element{
+    display: block;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    line-height: 30px;
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+
+}
+.cart-items-empty{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform-origin: 80% top;
+}
+
+
+.cart-items-empty::after{
+    content: "";
+    border: 18px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -12%;
+    right: 26px;
+}
+
+.cart-items-empty img{
+    display: block;
+    width: 50%;
+}
+
+.cart-items-empty p{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;    
+}
+
+.wrapper{
+    margin: 20px 40px 0px 150px;
+    display: flex;
+}
+
+.navbar-left{
+    background-color: white;
+    width: 17%;
+    height: 700px;
+}
+
+.navbar-left-title{
+    font-size: 18px;
+    padding: 0px 20px;
+    color: #444;
+}
+
+.navbar-left-element{
+    height: 30px;
+    width:auto;
+    margin: 20px 20px;
+    border-top: 1px solid #555;
+}
+
+.navbar-left-element-link{
+    position: absolute;
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: 10px 0px;
+}
+
+.navbar-left-element:hover .navbar-left-subelement{
+    display: flex;
+}
+
+.navbar-left-subelement{
+    display: flex;
+    width: 200px;
+    background-color: rgba(223, 219, 219, 0.8);
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+    top: 0px;
+    display: none;
+    z-index: 1;
+    transform-origin: 0% top;
+    animation: hienrane ease-in-out 0.3s;
+    box-shadow: 0px 2px 10px #555;
+}
+
+.navbar-left-subelement-link:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-left-subelement-link{
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transform-origin: 100% left;
+    animation: hienrane ease-in 0.3s;
+}
+
+@keyframes hienrane {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.wrapper-product{
+    width: 83%;
+}
+
+.wrapper-product-search{
+    margin: 15px 0px 15px 30px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding-left: 15px;
+    width: auto;
+}
+
+.wrapper-search-element{
+    display: block;
+    margin: 10px;
+    padding: 8px 18px;
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+}
+
+.wrapper-search-element-selected{
+    background-color: red;
+    color: white
+}
+
+.wrapper-select-sortby{
+    width: 30%;
+    height: 33px;
+    /* padding: 8px 0px; */
+    border: none;
+    margin: 0px;
+    display: flex;
+}
+
+.wrapper-select-sortby select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-right: 8px;
+}
+
+.wrapper-select-sortby input{
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+.wrapper-search-element:hover{
+    background-color: transparent;
+    color: red;
+}
+
+.wrapper-select-sortby select:focus-visible{
+    outline: none;
+}
+
+.refresh_pro_form{
+    height: 100%;
+    margin: 0px;
+}
+
+.refresh_pro{
+    height: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(255, 68, 68);
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.refresh_pro:hover{
+    background-color: transparent;
+    color: red;
+}
+
+.wrapper-product-content{
+    display: flex;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.product-infomation-wrapper{
+    display: block;
+    margin: 5px 5px;
+    width: 190px;
+    height: 325px;
+    background-color: white;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: transform linear 0.2s;
+    animation: transform linear 0.2s;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 5px #888;
+}
+
+@keyframes transform {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+.product-infomation-content::before{
+    position: absolute;
+    content: "Click để xem sản phẩm";
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: red;
+    width: 100%;
+    height: 30px;
+    top: 325px;
+    z-index: 1;
+    display: none;
+}
+
+.product-infomation-wrapper:hover .product-infomation-content::before{
+    display: block;
+    transform-origin: center bottom;
+    animation: transform linear 0.2s;
+}
+
+.product-infomation-wrapper:hover{
+    border: 1px solid red;
+}
+
+.product-info-image{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 54%;
+}
+.product-info-image img{
+    margin: 2px;
+    /* width: 175.75px; */
+    width: 95%;
+    height: 100%;
+}
+.product-info-database{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 0px 8px;
+    height: 44%;
+}
+
+.product-info-database p{
+    margin: 0px;
+}
+
+.product-info-title{
+    line-height: 16px;
+    height: 30%;
+    margin: 16px 8px !important;
+    font-size: 12px;
+    font-weight: 400;
+    font-family:"Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.product-info-price{
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+    align-items: center;
+}
+
+.product-info-price img{
+    color: red;
+    justify-self: flex-end;
+    width: 20px;
+    height: 20px;
+}
+
+.product-info-price-wrapper{
+    display: flex;
+}
+
+.product-info-discount{
+    font-size: 15px;
+    color: #333;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.product-info-price-originprice{
+    font-size: 15px;
+    color: #ee4d2d;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+.product-info-sold{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    align-items: center;
+    color: red;
+}
+
+.product-like{
+    width: 10px;
+    height: 10px;
+}
+
+.uhsss{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-info-wrapper-rating{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.product-info-start-rating{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-right: 2px !important;
+}
+
+
+.product-info-start{
+    display: flex;
+    align-items: center;
+}
+
+.product-info-start img{
+    width: 10px;
+    height: 14px;
+}
+.d8djfw9{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.product-info-daban{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0px;
+}
+
+.product-info-shop{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.product-info-shopname{
+    margin: 0px;
+}
+
+.product-info-shopaddress{
+    margin: 0px;
+}
+
+.product-info-favourite{
+    height: 16px;
+    line-height: 16px;
+    align-items: center;
+    display: flex;
+    top: 10px;
+    left: -8px;
+    position: absolute;
+    background-color: red;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.product-info-favourite::after{
+    content: "";
+    border-top: 6px solid rgb(145, 8, 8);
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+}
+
+.product-info-favourite img{
+    width: 14px;
+    height: 14px;
+    margin: 0px 4px 0px 3px;
+}
+
+.product-info-favouritetitle{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 0px 4px 0px 0px;
+    color: white;
+    
+}
+
+.product-info-discount-header{
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    display: flex;
+    width: 34px;
+    height: 38px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e2e235;
+}
+
+.discount-amount{
+    margin: 4px 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(241, 33, 33);
+}
+
+.giam-text{
+    margin: 2px 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: white;
+}
+
+.product-info-discount-header::after{
+    content: "";
+    position: absolute;
+    top: 38px;
+    border-style: solid;
+    border-width: 0px 17px 8px;
+    border-color: transparent #e2e235 transparent #e2e235;;
+}
+
+.paging{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paging_element{
+    font-size: 20px;
+    font-weight: 300;
+}
+.paging_element:hover{
+    color:rgb(50, 19, 122);
+}
+
+.paging_element_left, 
+.paging_element_right{
+    width: 30px;
+    height: 30px;
+    margin: 20px;   
+}
+
+.form-paging-main{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.paging_link_number{
+    display: block;
+    text-decoration: none;
+    color: rgb(197, 139, 139);
+    padding: 4px 16px;
+    margin: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.paging_link_number_selected{
+    background-color: red;
+    color:rgb(50, 19, 122) !important;
+}
+
+
+.footer_about{
+    display: flex;
+    border-top: 4px solid rgb(197, 17, 17);
+    margin: -8px;
+    padding: 80px 100px 0px 200px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+
+.footer_main_view p{
+    color: #888;
+    font-size: 14px;
+    font-family:"Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    
+}
+
+.takecare_customer{
+    width: 33%;
+}
+
+.footer_main_title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about_out_shop{
+    width: 33%;
+}
+
+.follow_us{
+    width: 33%;
+}
+
+.follow_us_element{
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.follow_us_element img{
+    width: 20px;
+    height: 20px;
+}
+
+.follow_us_element p{
+    margin: 8px;
+}
+
+.footer_banquyen{
+    text-align: center;
+    margin: 100px;
+}
+
+.footer_banquyen {
+    color: rgb(177, 31, 31);
+    font-weight: 500;      
+}
+
+
+
+
+

@@ -1,0 +1,285 @@
+.product_body{
+    background-color: #ddd;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; */
+    font-size: 16px;
+}
+
+.product_origin{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linkginshop{
+    text-decoration: none;
+    color: red;
+}
+
+.productinfo_main{
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 40px;
+    display: flex;
+
+}
+
+.productinfo_left{
+    width: 45%;
+}
+
+.productinfo_left img{
+    padding: 15px;
+    width: 100%;
+    /* width: 450px; */
+    /* height: 450px; */
+}
+
+.productinfo_info_underimg{
+    display: flex;
+    align-items: center;
+}
+
+.productinfo_left_share{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 50px;
+    height: 24px;
+}
+
+.productinfo_left_share p{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+}
+
+.productinfo_left_share img{
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.product_left_like{
+    display: flex;
+}
+
+.product_left_like img{
+    width: 20px;
+    height: 20px;
+}
+.product_left_like p{
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 16px;
+}
+
+.productinfo_right{
+    width: 55%;
+    padding: 30px;
+}
+
+.productinfo_right_title{
+    display: inline-block;
+    line-height: 24px;
+}
+
+
+.product_right_title_love{
+    display: inline-block;
+    background-color: rgb(201, 69, 69);
+    color: white;
+    padding: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 12px;
+    margin-right: 8px;
+    line-height: 14px;
+    
+}
+
+.product_right_info_sold{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.product_right_title_text{
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+}
+
+.productinfo-right-start{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.productinfo-right-start-rating,
+.productinfo_right_solded_number{
+    text-decoration: underline;
+    color: rgb(119, 34, 34);
+    margin-right: 5px;
+}
+
+.productinfo-right-start img{
+    width: 16px;
+    height: 22px;
+}
+
+.productinfo_right_sold{
+    display: flex;
+    align-items: center;
+}
+
+.product_right_price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 231, 231);
+}
+.product_price_origin{
+    margin: 20px 0px 20px 20px;
+    color: #999;
+}
+
+.product_right_currentprice{
+    margin: 20px 0px 20px 20px;
+    color: red;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product_discount{
+    margin: 20px 0px 20px 20px;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px;
+    background-color: red;
+    color: white;
+}
+
+.product_right_price_amount{
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+.productinfo_order p{
+    color: #999;
+}
+
+.productinfo_right_dealshock{
+    display: flex;
+    align-items: center;
+}
+
+.productinfo_right_order_info{
+    margin: 30px 0px 30px 30px;
+    width: 25%;
+}
+
+.productinfo_right_dealshock div{
+    color: white;
+    background-color: rgb(247, 36, 36);
+    padding: 2px;
+}
+
+.productinfo_right_transfer{
+    display: flex;
+    align-items: center;
+}
+
+.productinfo_right_transfer_free{
+    display: flex;
+    align-items: center;
+}
+
+.productinfo_right_transfer_free img{
+    width: 20px;
+    height: 20px;
+}
+
+.productinfo_right_transfer_free p{
+    color: #333;
+}
+.productinfo_number_deal{
+    height: 30px;
+    border-color: red;
+}
+.productinfo_number_deal:focus-visible{
+    outline: none;
+}
+
+.productinfo_right_transfer button{
+    width: 5%;
+    height: 30px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+#a{ 
+    width: 10%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    /* cursor: text; */
+}
+
+#a:focus-visible{
+    outline: none;
+}
+
+.addtocart{
+    display: flex;
+}
+
+.add_to_cart_form{
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    border-color: red;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(245, 198, 198);
+}
+
+.add_to_cart_form img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.add_to_cart_form p{
+    color: red;
+    font-weight: 520;
+    margin-right: 10px;
+}
+
+.buy_now_form{
+    margin: 30px;
+    border: none;
+    background-color: red;
+    color: white;
+    width: 40%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product_related_title{
+    color: red;
+    margin: 40px;
+    font-weight: 500;
+}
+
+.wrapper_product_info_related{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}

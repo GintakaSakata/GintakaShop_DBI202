@@ -1,0 +1,164 @@
+.cart_main_header{
+    background-color: #fff;
+    margin: -8px;
+}
+
+form{
+    margin: 0px;
+}
+.cart_main{
+    background-color: #eee;
+    height: 1000px;
+    margin: -8px;
+}
+
+.cart_main_header-left{
+    position: relative;
+    padding: 20px;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.cart_main_header-left a{
+    position: relative;
+}
+.cart_main_header-left a::after{
+    content: "|";
+    font-size: 60px;
+    top: 10px;
+    color: red;
+    width: 0px;
+    height: 100px;
+    position: absolute;
+}
+
+.cart_main_header-left img{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.cart_main_header_left_title{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 60, 60);
+}
+
+.cart_main_wrapper{
+    background-color: #eee;
+    padding: 30px;
+}
+
+.cart_main_element_header{
+    height: 40px !important;
+}
+
+.cart_main_element_header .cart_main_element_title{
+    text-align: center;
+}
+
+.cart_main_element_header p{
+    color: #777;
+}
+
+.cart_main_element{
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.cart_main_element img{
+    width: 8%;
+    /* height: 70px; */
+    margin-right: 20px;
+}
+
+.cart_main_element_title1{
+    width: 8%;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+}
+
+.cart_main_element_title{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(161, 24, 24);
+    width: 25%;
+}
+
+.cart_main_element_title_type{
+    text-align: center;
+    width: 10%;
+}
+
+.cart_main_element_title_price{
+    width: 12%;
+    text-align: center;
+}
+
+.cart_main_element_title_number{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.cart_main_element_title_number button{
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(238, 29, 29);
+    border: none;
+    cursor: pointer;
+}
+.input_number{
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    text-align: center;
+    color:rgb(216, 36, 36);
+
+}
+.input_number:focus-visible{
+    outline: none;
+}
+
+.cart_main_element_title_total{
+    width: 30%;
+    text-align: center;
+    color:rgb(216, 36, 36);
+    border: none;
+    background-color: transparent;
+}
+.cart_main_element_title_total:focus-visible{
+    outline: none;
+}
+
+.cart_main_element_title_delete{
+    width: 10%;
+    text-align: center; 
+    margin: 0px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.cart_main_element_title_delete input{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color:rgb(216, 36, 36);
+}
+
+.cart_main_element_title_delete input:hover{
+    color:rgb(161, 24, 24);
+}
