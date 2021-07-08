@@ -63,6 +63,14 @@
                 include_once("../view/view_cart.php");
                 break;
             }
+            case 'view_list':{
+                include_once("../view/view_listordered.php");
+                break;
+            }
+            case 'view_order':{
+                include_once("../view/view_order.php");
+                break;
+            }
         }
     }
     

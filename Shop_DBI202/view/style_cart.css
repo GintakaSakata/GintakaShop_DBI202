@@ -1,6 +1,14 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+.order{
+    padding-bottom: 100px;
+    background-color: #eee;
+}
+
 .cart_main_header{
-    background-color: #fff;
-    margin: -8px;
+    background-color: white;
 }
 
 form{
@@ -8,8 +16,6 @@ form{
 }
 .cart_main{
     background-color: #eee;
-    height: 1000px;
-    margin: -8px;
 }
 
 .cart_main_header-left{
@@ -26,7 +32,7 @@ form{
 .cart_main_header-left a::after{
     content: "|";
     font-size: 60px;
-    top: 10px;
+    top: 0px;
     color: red;
     width: 0px;
     height: 100px;
@@ -60,7 +66,7 @@ form{
 }
 
 .cart_main_element_header p{
-    color: #777;
+    color: red;
 }
 
 .cart_main_element{
@@ -118,6 +124,12 @@ form{
     border: none;
     cursor: pointer;
 }
+
+.cart_main_element_title_number button:focus-visible{
+    outline: none;
+}
+
+
 .input_number{
     margin: 0px;
     padding: 0px;
@@ -161,4 +173,170 @@ form{
 
 .cart_main_element_title_delete input:hover{
     color:rgb(161, 24, 24);
+}
+
+.order_setting{
+    border-bottom: 100px;
+}
+
+.cart_main_wrapper_list_order{
+    background-color: white;
+    margin: 50px;
+    padding-left: 30px;
+}
+
+.form_continue_to_order{
+    width: 100%;
+}
+
+.form_continue_to_order input{
+    background-color: #f53d2d;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+    font-size: 18px;
+}
+
+.cart_list_order_title{
+    padding: 10px;
+    color:rgb(241, 60, 60);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.cart_list_order_element_ne p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cart_list_order_element{
+    margin-top: 20px;
+}
+
+.cart_list_order_element p{
+    margin: 0px;
+}
+.cart_list_order_element_title,
+.cart_list_order_element_number{
+    color: #777;
+}
+
+.cart_list_order_element_single_price,
+.cart_list_order_element_total_price{
+    color:#f53d2d;
+    font-size: 17px;
+}
+
+.cart_list_order_element img{
+    width: 10%;
+}
+
+
+.cart_list_order_status_paying input{
+    margin: 0px;
+    padding: 18px;
+    border: none;
+    background-color: #f53d2d;
+    color: white;
+}
+.cart_list_order_status_paying{
+    background-color: #f53d2d;
+    color: white;
+    margin: 20px;
+    font-size: 18px;
+}
+
+
+.cart_list_order_status_price{
+    background-color: #f53d2d;
+    color: white;
+    padding: 18px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.btn_status_payed{
+    background-color: #ddd;
+    color: #666;
+    padding: 18px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.container-order-confirm-element{
+    margin: 10px 0px;
+}
+
+
+.container-order{
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-order-title{
+    color:rgb(216, 36, 36);
+    padding: 20px;
+}
+
+.container-order-confirm-elementfirst{
+    color:rgb(161, 24, 24);
+}
+
+.container-order-confirm-element p {
+    color: #777;
+}
+
+.form_to_comfirm_order{
+    background-color: white;
+    width: 100%;
+}
+
+.form_to_comfirm_order_order input{
+    height: 30px;
+    width: 30%;
+}
+
+.form_to_comfirm_order_order input:focus-visible{
+    outline: none;
+}
+
+.form_to_comfirm_order_order label{
+    font-size: 18px;
+    color:yellowgreen;
+}
+
+.form_to_comfirm_order_order .row{
+    margin: 4px;
+}
+
+.form_to_comfirm_order_submit,
+.form_to_comfirm_order_submit-price{
+    padding: 0px;
+    margin: 0px;
+}
+
+.form_to_comfirm_order_submit-btn input{
+    border: none;
+    background-color: #f53d2d;
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+.form_to_comfirm_order_submit-price p,
+.form_to_comfirm_order_submit-btn input{
+    font-size: 18px;
+}
+
+.form_to_comfirm_order_submit-pricene{
+    border: none;
+    background-color: #f53d2d;
+    color: white;
+    padding: 6px 22px;
 }

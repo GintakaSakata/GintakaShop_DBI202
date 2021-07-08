@@ -16,8 +16,7 @@
         $querySelectProduct = 'SELECT * FROM productinfo INNER JOIN product ON productinfo.productCode = product.proCode 
         where product.proTypeName = "'.$orderByType.'" ';
     }else{
-        $querySelectProduct = "SELECT * FROM productinfo";
-        
+        $querySelectProduct = "SELECT * FROM productinfo";  
     }
 
 
@@ -41,7 +40,6 @@
     
     if(isset($_SESSION['product'])){
         $arraySelectProduct = $_SESSION['product'];
-        
     }else{
         $arraySelectProduct = excuteQueryReturnArray($querySelectProduct);
         $_SESSION['product'] = $arraySelectProduct;
@@ -50,6 +48,13 @@
     if(isset($_GET['orderbytype']) || isset($_GET['orderbycode'])){
         $arraySelectProduct = excuteQueryReturnArray($querySelectProduct);
     }
+
+    if(isset($_POST['nametosearch'])){
+        $querySelectProduct = 'SELECT * FROM productinfo where describlePro like "%'.$_POST['nametosearch'].'%" ';   
+        $arraySelectProduct = excuteQueryReturnArray($querySelectProduct);
+    }
+
+
     $numberOfPage = ceil(count($arraySelectProduct)/30);
     
     if(isset($_POST['page'])){
@@ -65,6 +70,7 @@
     // echo "<pre>";
     // print_r($_POST);
     // echo "</pre>";
+    
 
 ?>
 
@@ -78,7 +84,7 @@
     <link rel="stylesheet" href="style.css" style="text/css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" style="margin: -8px -8px 0px -8px;">
         <div class="contact-header">
             <div class="contact-left">
                 <?php 
@@ -157,10 +163,14 @@
                 <?php
                     if(isset($_SESSION['login'])){
                 ?>
-                <p class="btn-contact-right">WELCOME <?php echo $_SESSION['login']['cusName']; ?> </p>
-                <p class="btn-contact-right">
-                    <a href=".?action=logout" class="e23dascc">Log out</a> 
-                </p>
+                <div class="nav_bar_login">
+                    <p class="btn-contact-right btn_contact_right_welcome">WELCOME <?php echo $_SESSION['login']['cusName']; ?> </p>
+                    <div class="btn_contact_right_upanddown">
+                        <a href=".?action=shop_seller">Visit your shop</a>
+                        <a href=".?action=view_list" class="">Buy History</a>
+                        <a href=".?action=logout" class="">Log out</a> 
+                    </div>
+                </div>
                 <?php
                     }else{
                 ?>
@@ -187,7 +197,13 @@
             <div class="search-headear">
                 <div class="wrapper-button">
                     <form action="" method="POST" class="form-for-search">
-                        <input class="find-button-shoppe" placeholder="Search here" type="text">
+                        <?php 
+                            if(isset($_POST['nametosearch'])){
+                                echo '<input class="find-button-shoppe" placeholder="Result for search: '.$_POST['nametosearch'].'" type="text" name="nametosearch">';
+                            }else{
+                                echo '<input class="find-button-shoppe" placeholder="Search here" type="text" name="nametosearch">';
+                            }
+                        ?>
                         <button class="find-button-submit"><img class="find-icon-header" src="../view/logo/find.pgn" alt="">FIND</button>
                     </form>
                 </div>
@@ -327,7 +343,7 @@
                 </div>
                 <div class="wrapper-product-content">
                     <?php 
-                        $choosenProduct = array_slice($arraySelectProduct, ($pageCurrent-1)*30+1,30);
+                        $choosenProduct = array_slice($arraySelectProduct, ($pageCurrent-1)*30,30);
                         foreach($choosenProduct as $key => $value){
                     ?>
                     <a href="?viewproduct=<?php echo $value['productID']; ?>" class="product-infomation-wrapper">

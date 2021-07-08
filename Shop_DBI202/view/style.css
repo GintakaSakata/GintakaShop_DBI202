@@ -1,6 +1,6 @@
 .header{
     background-color: #f53d2d;
-    margin: -8px -8px 0px -8px;
+    /* margin: -8px -8px 0px -8px; */
 } 
 
 #main_of_main{
@@ -293,6 +293,55 @@
 .find-icon-header{
     z-index: 1;
 }
+.nav_bar_login{
+    position: relative;
+}
+
+.nav_bar_login:hover .btn_contact_right_upanddown{
+    display: flex;
+}
+
+.btn_contact_right_upanddown:hover{
+    display: flex;
+}
+
+.btn_contact_right_upanddown{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    color: #444;
+    box-shadow: 0px 2px 5px rgb(119, 107, 107);
+    display: none;
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 18px;
+    z-index: 1;
+    transform-origin: 70% top;
+    animation: hienratutu ease-in 0.3s;
+}
+
+.btn_contact_right_upanddown a{
+    margin: 4px 0px;
+    width: 100%;
+    text-decoration: none;
+    color: #444;
+}
+
+.btn_contact_right_upanddown a:hover{
+    text-decoration: none;
+    color: #f53d2d;
+}
+
+.btn_contact_right_upanddown::after{
+    content: "";
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 20%;
+    top: -30px; 
+}
 
 
 .cart-header-right{
@@ -398,6 +447,7 @@
     text-align: end;
     justify-self: flex-end;
     width: 25%;
+    color: rgb(255, 49, 49);
 }
 
 .number_order{
@@ -920,7 +970,7 @@
 .footer_about{
     display: flex;
     border-top: 4px solid rgb(197, 17, 17);
-    margin: -8px;
+    /* margin: -8px; */
     padding: 80px 100px 0px 200px;
     font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 }

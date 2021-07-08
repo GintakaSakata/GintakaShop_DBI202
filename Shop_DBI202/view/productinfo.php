@@ -45,7 +45,7 @@
 </head>
 <body class="product_body"> 
     
-    <header class="header">
+    <header class="header" style="margin: -8px -8px 0px -8px;">
         <div class="contact-header">
             <div class="contact-left">
                 <?php 
@@ -120,10 +120,14 @@
                 <?php
                     if(isset($_SESSION['login'])){
                 ?>
-                <p class="btn-contact-right">WELCOME <?php echo $_SESSION['login']['cusName']; ?> </p>
-                <p class="btn-contact-right">
-                    <a href=".?action=logout" class="e23dascc">Log out</a> 
-                </p>
+                <div class="nav_bar_login">
+                    <p class="btn-contact-right btn_contact_right_welcome">WELCOME <?php echo $_SESSION['login']['cusName']; ?> </p>
+                    <div class="btn_contact_right_upanddown">
+                        <a href=".?action=shop_seller">Visit your shop</a>
+                        <a href=".?action=view_list" class="">Buy history</a>
+                        <a href=".?action=logout" class="">Log out</a> 
+                    </div>
+                </div>
                 <?php
                     }else{
                 ?>
